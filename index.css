@@ -1,0 +1,45 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+}
+
+.tab {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+}
+
+.tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+}
+
+.tab button:hover {
+	background-color: #ddd;
+}
+
+.tab button.active {
+	background-color: #ccc;
+}
+
+.tabcontent {
+	display: none;
+	position: fixed;
+	top: 45px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+}

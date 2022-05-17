@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>Cell Lab</title>
+	<link rel="stylesheet" href="index.css">
+	<script src="index.js"></script>
+</head>
+<body>
+	<div class="tab">
+		<button class="tablinks" id="defaultOpen" onclick="openPage(event, 'petri')">Petri</button>
+		<button class="tablinks" onclick="openPage(event, 'genes')">Genes</button>
+		<button class="tablinks" onclick="openPage(event, 'settings')">Settings</button>
+	</div>
+	<div id="petri" class="tabcontent">
+		petri
+	</div>
+	<div id="genes" class="tabcontent">
+		genes
+	</div>
+	<div id="settings" class="tabcontent">
+		settings
+	</div>
+</body>
+<script>
+	document.getElementById("defaultOpen").click();
+</script>
+</html>
